@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dyslexia Simulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6d7ff; /* Lilac background */
+      color: #2e0854; /* Deep purple text */
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background-color: #f3ebff; /* Lighter lilac card */
+      border: 2px solid #2e0854;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin-top: 0;
+      color: #2e0854;
+    }
+
+    .controls {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #d8bfd8; /* Thistle lilac tone */
+      border: 1px solid #2e0854;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    button {
+      background-color: #2e0854;
+      color: #ffffff;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    button.off {
+      background-color: #6b4c84;
+    }
+
+    label {
+      font-size: 0.9rem;
+      color: #2e0854;
+      font-weight: bold;
+    }
+
+    .simulator-box {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #2e0854;
+      border: 1px solid #2e0854;
+      padding: 15px;
+      min-height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>The Dyslexic Experience</h1>
+
+  <div class="controls">
+    <button id="toggleBtn">Take a breather</button>
+    <label>
+      Speed:
+      <input type="range" id="speedSlider" min="50" max="500" value="150" step="10">
+    </label>
+  </div>
+
+  <div class="simulator-box" id="content">
+    Dyslexia is a learning difference that primarily affects reading and spelling skills. It is caused by differences in how the brain processes language, which can cause letters and words to appear as though they are changing order or moving around on the page.
+  </div>
+</div>
+
+<script>
+  const contentEl = document.getElementById('content');
+  const toggleBtn = document.getElementById('toggleBtn');
+  const speedSlider = document.getElementById('speedSlider');
+
+  const originalText = contentEl.innerText;
+  let isActive = true;
+  let timer = null;
+
+  function scrambleWord(word) {
+    if (word.length <= 3) return word;
+
+    let chars = word.split('');
+    let idx = Math.floor(Math.random() * (chars.length - 3)) + 1;
+
+    let temp = chars[idx];
+    chars[idx] = chars[idx + 1];
+    chars[idx + 1] = temp;
+
+    return chars.join('');
+  }
+
+  function step() {
+    if (!isActive) return;
+
+    let words = originalText.split(/(\s+)/);
+
+    let transformed = words.map(w => {
+      if (/\s+/.test(w)) return w;
+      return Math.random() > 0.4 ? scrambleWord(w) : w;
+    }).join('');
+
+    contentEl.innerText = transformed;
+  }
+
+  function start() {
+    stop();
+    timer = setInterval(step, parseInt(speedSlider.value));
+  }
+
+  function stop() {
+    if (timer) clearInterval(timer);
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    isActive = !isActive;
+    if (isActive) {
+      toggleBtn.innerText = "Pause Simulation";
+      toggleBtn.classList.remove('off');
+      start();
+    } else {
+      toggleBtn.innerText = "Start Simulation";
+      toggleBtn.classList.add('off');
+      stop();
+      contentEl.innerText = originalText;
+    }
+  });
+
+  speedSlider.addEventListener('input', () => {
+    if (isActive) start();
+  });
+
+  start();
+</script>
+
+</body>
+</html>
