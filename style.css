@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #F0EFED;
+  font-family: arial, sans-serif;
+  background-color: #f0efed;
   color: #202020;
   display: flex;
   justify-content: center;
@@ -11,8 +11,8 @@ body {
 .container {
   max-width: 600px;
   width: 100%;
-  background-color: #E5D7C8;
-  border: 2px solid #C7BFB8;
+  background-color: #e5d7c8;
+  border: 2px solid #c7bfb8;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -27,8 +27,8 @@ h1 {
 .controls {
   margin-bottom: 15px;
   padding: 12px;
-  background-color: #D8CEC4;
-  border: 1px solid #C7BFB8;
+  background-color: #d8cec4;
+  border: 1px solid #c7bfb8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@ h1 {
 
 button {
   background-color: #202020;
-  color: #F0EFED;
+  color: #f0efed;
   border: none;
   padding: 8px 16px;
   cursor: pointer;
@@ -60,12 +60,13 @@ button {
 }
 
 button:disabled {
-  background-color: #E5D7C8;
+  background-color: #c7bfb8;
+  color: #8d857e;
   cursor: not-allowed;
 }
 
 button.off {
-  background-color: #B28A79;
+  background-color: #b28a79;
 }
 
 label {
@@ -82,8 +83,8 @@ input[type="range"] {
   appearance: none;
   width: 160px;
   height: 6px;
-  background: #C7BFB8;
-  border: 1px solid #2e0854;
+  background: #c7bfb8;
+  border: 1px solid #202020;
   outline: none;
 }
 
@@ -100,14 +101,14 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
-  background: #2e0854;
+  background: #202020;
   cursor: pointer;
   border-radius: 50%;
   border: none;
 }
 
 input[type="range"]::-moz-range-track {
-  background: #B28A79;
+  background: #c7bfb8;
   height: 6px;
 }
 
@@ -116,7 +117,7 @@ input[type="range"]::-moz-range-track {
   line-height: 1.6;
   background-color: #ffffff;
   color: #202020;
-  border: 1px solid #C7BFB8;
+  border: 1px solid #c7bfb8;
   padding: 15px;
   min-height: 150px;
 }
