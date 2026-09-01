@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #e6d7ff;
-  color: #2e0854;
+  background-color: #F0EFED;
+  color: #202020;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -11,8 +11,8 @@ body {
 .container {
   max-width: 600px;
   width: 100%;
-  background-color: #f3ebff;
-  border: 2px solid #2e0854;
+  background-color: #E5D7C8;
+  border: 2px solid #C7BFB8;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -20,15 +20,15 @@ body {
 h1 {
   font-size: 1.4rem;
   margin-top: 0;
-  color: #2e0854;
+  color: #202020;
   text-align: center;
 }
 
 .controls {
   margin-bottom: 15px;
   padding: 12px;
-  background-color: #d8bfd8;
-  border: 1px solid #2e0854;
+  background-color: #D8CEC4;
+  border: 1px solid #C7BFB8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,14 +45,14 @@ h1 {
 .slide-counter {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #2e0854;
+  color: #202020;
   min-width: 80px;
   text-align: center;
 }
 
 button {
-  background-color: #2e0854;
-  color: #ffffff;
+  background-color: #202020;
+  color: #F0EFED;
   border: none;
   padding: 8px 16px;
   cursor: pointer;
@@ -60,30 +60,29 @@ button {
 }
 
 button:disabled {
-  background-color: #a38dbd;
+  background-color: #E5D7C8;
   cursor: not-allowed;
 }
 
 button.off {
-  background-color: #6b4c84;
+  background-color: #B28A79;
 }
 
 label {
   font-size: 0.9rem;
-  color: #2e0854;
+  color: #202020;
   font-weight: bold;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-/* Custom Deep Purple Range Slider */
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   width: 160px;
   height: 6px;
-  background: #bfa3d8;
+  background: #C7BFB8;
   border: 1px solid #2e0854;
   outline: none;
 }
@@ -93,7 +92,7 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 16px;
   height: 16px;
-  background: #2e0854;
+  background: #202020;
   cursor: pointer;
   border-radius: 50%;
 }
@@ -108,7 +107,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-moz-range-track {
-  background: #bfa3d8;
+  background: #B28A79;
   height: 6px;
 }
 
@@ -116,8 +115,8 @@ input[type="range"]::-moz-range-track {
   font-size: 1.1rem;
   line-height: 1.6;
   background-color: #ffffff;
-  color: #2e0854;
-  border: 1px solid #2e0854;
+  color: #202020;
+  border: 1px solid #C7BFB8;
   padding: 15px;
   min-height: 150px;
 }
