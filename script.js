@@ -1,10 +1,9 @@
-// Replace these strings with your 5 custom DLP paragraphs
 const slides = [
-  "Slide 1: Dyslexia is a learning difference that primarily affects reading and spelling skills. It is caused by differences in how the brain processes language.",
-  "Slide 2: People with dyslexia may experience text that seems to shift, blur, or flip on the page. This increases cognitive load and causes rapid eye fatigue.",
-  "Slide 3: Dyslexia has nothing to do with intelligence. Individuals with dyslexia often excel in visual-spatial reasoning, creative problem solving, and big-picture thinking.",
-  "Slide 4: Phonological processing is the core difficulty. Connecting written letters to spoken sounds requires extra effort, slowing down reading speed.",
-  "Slide 5: Simple accommodations—such as using clear fonts, offering extra time, and providing audio alternatives—make learning environments vastly more accessible."
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.",
+  "Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.",
+  "Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
+  "In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor."
 ];
 
 let currentSlide = 0;
