@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dyslexia Reading Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Dyslexia Reading Simulator</h1>
+
+  <div class="controls">
+    <!-- Slide Navigation Row -->
+    <div class="slide-nav">
+      <button id="prevBtn" disabled>&laquo; Prev</button>
+      <span class="slide-counter" id="slideIndicator">Slide 1 of 5</span>
+      <button id="nextBtn">Next &raquo;</button>
+    </div>
+
+    <!-- Simulation Controls Row -->
+    <button id="toggleBtn">Pause Simulation</button>
+    <label>
+      Speed:
+      <input type="range" id="speedSlider" min="50" max="500" value="150" step="10">
+    </label>
+  </div>
+
+  <div class="simulator-box" id="content"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

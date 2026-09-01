@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6d7ff;
+  color: #2e0854;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #f3ebff;
+  border: 2px solid #2e0854;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: #2e0854;
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: #d8bfd8;
+  border: 1px solid #2e0854;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.slide-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slide-counter {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #2e0854;
+  min-width: 80px;
+  text-align: center;
+}
+
+button {
+  background-color: #2e0854;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:disabled {
+  background-color: #a38dbd;
+  cursor: not-allowed;
+}
+
+button.off {
+  background-color: #6b4c84;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #2e0854;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Custom Deep Purple Range Slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 160px;
+  height: 6px;
+  background: #bfa3d8;
+  border: 1px solid #2e0854;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #2e0854;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #2e0854;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #bfa3d8;
+  height: 6px;
+}
+
+.simulator-box {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #2e0854;
+  border: 1px solid #2e0854;
+  padding: 15px;
+  min-height: 150px;
+}
