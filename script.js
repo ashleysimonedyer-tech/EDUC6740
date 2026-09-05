@@ -66,11 +66,11 @@ function stop() {
 toggleBtn.addEventListener('click', () => {
   isActive = !isActive;
   if (isActive) {
-    toggleBtn.innerText = "Pause Simulation";
+    toggleBtn.innerText = "Take a breather";
     toggleBtn.classList.remove('off');
     start();
   } else {
-    toggleBtn.innerText = "Start Simulation";
+    toggleBtn.innerText = "Restart";
     toggleBtn.classList.add('off');
     stop();
     contentEl.innerText = slides[currentSlide];
