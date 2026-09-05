@@ -1,9 +1,9 @@
 const slides = [
-  "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.",
-  "Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.",
-  "Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
-  "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
-  "In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor."
+  ""Dyslexia is a neurodevelopmental learning difference (unrelated to general intellectual ability) characterised primarily by persistent difficulties with fluent reading, phonological processing, word recognition, and spelling (American Psychiatric Association, 2013; Snowling et al., 2020).",
+  "Cognitively and physically, students experience memory limits, visual stress, lower neural adaptation to repetitive sensory input, and subtle motor coordination or posture challenges (Perrachione et al., 2016; Quercia, 2026; Williams, 2025). ",
+  "Despite these barriers, dyslexic learners frequently demonstrate distinct strengths, such as  increased visual-spatial reasoning, vivid 3D spatial visualisation, and strong problem-solving capacities (Eide & Eide, 2011; von Károlyi et al., 2003).",
+  "In the classroom, high cognitive load demands and time constraints can lead to mental fatigue, inattention, and emotional impacts such as reading anxiety. (Carroll et al., 2005; Farrell, 2022; López-Zamora et al., 2025).",
+  "Students may require variance to the usual class instructional pacing, accessible formats and extended time to access the curriculum without being hindered by underlying decoding and processing barriers (Almgren Bäck et al., 2023; Farrell, 2022; Lewandowski et al., 2008; Wood et al., 2018)."
 ];
 
 let currentSlide = 0;
